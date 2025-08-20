@@ -166,3 +166,29 @@ body {
     text-align: center; /* Macht den Text mittig */
     background-color: #f4f4f4; /* Hellgrauer Hintergrund */
 }
+/* Media Query für Bildschirme, die kleiner als 768px sind */
+@media screen and (max-width: 768px) {
+    .overlay-content {
+        padding: 20px;
+    }
+    .overlay h2,
+    .overlay p {
+        font-size: 1.2rem;
+    }
+    #codeInput {
+        width: 80%;
+    }
+}
+/* Media Query für Bildschirme, die kleiner als 768px sind */
+@media screen and (max-width: 768px) {
+    .gallery-image {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Media Query für Bildschirme, die kleiner als 768px sind (typisch für Handys) */
+@media screen and (max-width: 768px) {
+    .parallax-section {
+        background-attachment: scroll;
+    }
+}

@@ -110,7 +110,7 @@ button:hover {
     color: #e74c3c;
 }
 
-/* NEUE STILE für das Overlay */
+/* Stile für das Overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -136,6 +136,7 @@ button:hover {
     opacity: 0;
     pointer-events: none;
 }
+
 .image-gallery {
     display: flex;
     justify-content: center;
@@ -152,22 +153,11 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Grundlegende Stile IMPRESSUM*/
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    color: #333;
-    overflow-x: hidden;
-}
-
-.normal-section {
-    padding: 80px 20px;
-    text-align: center; /* Macht den Text mittig */
-    background-color: #f4f4f4; /* Hellgrauer Hintergrund */
-}
-/* Media Query für Bildschirme, die kleiner als 768px sind */
+/* Mobile Optimierung */
 @media screen and (max-width: 768px) {
+    .parallax-section {
+        background-attachment: scroll !important;
+    }
     .overlay-content {
         padding: 20px;
     }
@@ -178,17 +168,15 @@ body {
     #codeInput {
         width: 80%;
     }
-}
-/* Media Query für Bildschirme, die kleiner als 768px sind */
-@media screen and (max-width: 768px) {
     .gallery-image {
         width: 100%;
         height: auto;
     }
-}
-/* Media Query für Bildschirme, die kleiner als 768px sind (typisch für Handys) */
-@media screen and (max-width: 768px) {
-    .parallax-section {
-        background-attachment: scroll;
+    .profile-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card {
+        max-width: 100%;
     }
 }

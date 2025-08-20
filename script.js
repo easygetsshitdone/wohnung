@@ -1,6 +1,6 @@
 function checkCode() {
     // Hier kannst du den Geheimcode festlegen
-    const correctCode = "f"; 
+    const correctCode = "danke123"; 
     
     // Eingabe des Nutzers abrufen
     const enteredCode = document.getElementById('codeInput').value;

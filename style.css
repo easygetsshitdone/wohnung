@@ -4,6 +4,7 @@ body {
     margin: 0;
     line-height: 1.6;
     color: #333;
+
     overflow-x: hidden;
 }
 
@@ -26,11 +27,11 @@ body {
 }
 
 .parallax-2 {
-    background-image: url('bilder/home1.jpg');
+    background-image: url('bilder/boot.jpg');
 }
 
 .content {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 102, 102, 0.8);
     padding: 20px 40px;
     border-radius: 10px;
 }
@@ -179,4 +180,4 @@ button:hover {
     .card {
         max-width: 100%;
     }
-}
+} 
